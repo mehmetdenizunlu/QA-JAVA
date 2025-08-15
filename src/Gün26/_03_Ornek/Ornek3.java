@@ -16,5 +16,16 @@ public class Ornek3 {
                 ondan sonra toplam alarak çıkartınız  */
 
         Musteri m1 = new Musteri();
+        m1.name ="Mehmet";
+        ElektirikHesabi hesap = new ElektirikHesabi();
+        m1.elektirikHesabi = hesap;
+        m1.elektirikHesabi.tuketimEkle(100);
+        m1.elektirikHesabi.tuketimEkle(200);
+        m1.elektirikHesabi.tuketimEkle(150);
+
+        System.out.println("musteri = " + m1.name);
+        m1.elektirikHesabi.toplamTuketimiYaz();
+
+        m1.elektirikHesabi.odenecekTutar();
     }
 }
